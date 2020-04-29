@@ -42,7 +42,7 @@ public class TorpedoStore {
     try {
       generator = SecureRandom.getInstanceStrong();
     }catch(NoSuchAlgorithmException e) {
-      return false;
+      return success;
     }
 
     double r = generator.nextDouble();
